@@ -29,6 +29,33 @@
     	<artifactId>spring-webmvc</artifactId>
     	<version>${spring.version}</version>
     </dependency>
+
+    <dependency>
+    	<groupId>taglibs</groupId>
+    	<artifactId>standard</artifactId>
+    	<version>1.1.2</version>
+    </dependency>
+    
+    <dependency>
+    <groupId>org.apache.taglibs</groupId>
+    <artifactId>taglibs-standard-spec</artifactId>
+    <version>1.2.5</version>
+</dependency>
+
+<!--  Resolve http://java.sun.com/jsp/jstl/core-->
+    <dependency>
+    	<groupId>javax.servlet</groupId>
+    	<artifactId>jstl</artifactId>
+    	<version>1.2</version>
+    </dependency>
+    
+    <!-- Resolve Jsp pageContext Dependancy -->
+    <dependency>
+        <groupId>javax.servlet.jsp</groupId>
+        <artifactId>jsp-api</artifactId>
+        <version>2.1</version>
+        <scope>provided</scope>
+    </dependency>
   </dependencies>
   <build>
     <finalName>onlineshopping</finalName>
