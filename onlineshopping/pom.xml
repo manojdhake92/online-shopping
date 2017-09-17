@@ -56,6 +56,13 @@
         <version>2.1</version>
         <scope>provided</scope>
     </dependency>
+    <!-- Linking Backend with FrontEnd Project  -->
+    <dependency>
+    	<groupId>md.spring</groupId>
+    	<artifactId>shoppingbackend</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+     
+    </dependency>
   </dependencies>
   <build>
     <finalName>onlineshopping</finalName>

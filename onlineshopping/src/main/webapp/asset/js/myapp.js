@@ -8,7 +8,8 @@ $(function(){
 			$('#contact').addClass('active');
 			break;
 		default:
-			$('#home').addClass('active');
+			$('#viewProducts').addClass('active');
+			$('#act_'+menu).addClass('active');
 			break;
 	}
 });

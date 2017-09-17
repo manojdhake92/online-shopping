@@ -5,6 +5,7 @@
 <spring:url var ="css"   value="/resources/css"></spring:url>
 <spring:url var ="js"   value="/resources/js"></spring:url>
 <spring:url var ="images"   value="/resources/images"></spring:url>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,6 +50,10 @@
 	
 	<c:if test="${ ClickedContactBtn == true}">
 		<%@include  file="./shared/contact.jsp" %>
+	</c:if>
+	
+	<c:if test="${ ClickedAllProductsBtn == true  or  ClickedCategoryProductsBtn == true}">
+		<%@include  file="./shared/listProducts.jsp" %>
 	</c:if>
     <!-- Footer  Page-->
     <%@include file="./shared/footer.jsp" %>
