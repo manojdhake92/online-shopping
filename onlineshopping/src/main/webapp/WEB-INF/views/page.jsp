@@ -55,6 +55,11 @@
 	<c:if test="${ ClickedAllProductsBtn == true  or  ClickedCategoryProductsBtn == true}">
 		<%@include  file="./shared/listProducts.jsp" %>
 	</c:if>
+	
+	<c:if test="${ ClickedShowProductBtn == true }">
+		<%@include  file="./shared/singleProduct.jsp" %>
+	</c:if>
+	
     <!-- Footer  Page-->
     <%@include file="./shared/footer.jsp" %>
 
@@ -62,7 +67,11 @@
     <script src="${js}/jquery.min.js"></script>
     <script src="${js}/popper.min.js"></script>
     <script src="${js}/bootstrap.min.js"></script>
-
+  
+   <!-- DataTable Plugin -->
+   <%-- <script src="${js}/jquery.dataTables.js"></script> --%>
+  
+   
 	<!-- Self Coded Javascript -->
 	<script src="${js}/myapp.js"></script>
   </body>

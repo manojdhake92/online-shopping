@@ -12,4 +12,7 @@ $(function(){
 			$('#act_'+menu).addClass('active');
 			break;
 	}
+	
+	
+	
 });
