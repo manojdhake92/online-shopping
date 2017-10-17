@@ -5,10 +5,18 @@ $(function(){
 				$('#about').addClass('active');
 				break;
 		case  'Contact Us':
-			$('#contact').addClass('active');
-			break;
+			  $('#contact').addClass('active');
+			  break;
+			
+		case  'Manage Product':
+			  $('#ManageProduct').addClass('active');
+			  break;
+			  
+		case  'AllProducts':
+			  $('#viewProducts').addClass('active');
+			  break;
+			
 		default:
-			$('#viewProducts').addClass('active');
 			$('#act_'+menu).addClass('active');
 			break;
 	}

@@ -60,6 +60,10 @@
 		<%@include  file="./shared/singleProduct.jsp" %>
 	</c:if>
 	
+	<c:if test="${ ClickedManageProductBtn == true }">
+		<%@include  file="./shared/manageProduct.jsp" %>
+	</c:if>
+	
     <!-- Footer  Page-->
     <%@include file="./shared/footer.jsp" %>
 
